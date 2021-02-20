@@ -1,4 +1,7 @@
 const inquirer = require('inquirer');
+const colors = require('colors');
+const fs = require('fs');
+const title = `${response.title}`;
 
 inquirer
     .prompt([
@@ -50,6 +53,19 @@ inquirer
     },
 
     ])
-//     .then((response) =>
-//      console.log('Success!')   
-//   );
+     .then((response) =>
+    //  fs.writeFile('README.txt',    
+     fs.writeFile('README.txt', 
+    `${response.title}`+`\n\n`+
+    '## Description'+`\n\n` +
+    `${response.Description}\n\n`+
+     '## Table of Contents',
+
+
+     
+     //'Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions';
+
+        (err) => err ? console.error(err) : console.log('Success!')));
+
+
+
