@@ -1,8 +1,15 @@
-# shon hatcher 
+[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
+
+
+# Read Me Generator 
+
+undefined
+
 
 ## Description 
 
-asdfa
+It is cool
+
 
 ## Table of Contents 
 
@@ -12,36 +19,44 @@ asdfa
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
+* [Questions](#questions)
+
+
 ## Installation
-## Questions
 
 This project is installed by using:
-         afsd.
+         asdfa.
+
 
 ## Usage
 
-asdfa
+sdfasd
+
 
 ## License
 
-Apache License 2.0
+Eclipse
+
 
 ## Credits
 
 The following individual(s) assisted with the creation of this project:
-        afdssd
+        me, myself, and I
+
 
 ## Contributing
 
 If you would like to contribute to my application, please follow these guidelines: 
-        asdf
+        fad
+
 
 ## Tests
 
 If applicable, the following testing library was used to test this application: 
-        adfa
+        afds
+
 
 ## Questions
 
-Github Page: https://github.com/asd
-Email Address: adsfsa
+Github Page: https://github.com/shonhatcher
+Email Address: shonhatcher@gmail.com
