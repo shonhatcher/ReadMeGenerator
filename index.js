@@ -1,14 +1,12 @@
 const inquirer = require('inquirer');
-const colors = require('colors');
 const fs = require('fs');
-const title = `${response.title}`;
 
 inquirer
     .prompt([
     {
         type: 'input',
         message: 'What is the name of your project?',
-        name: 'title'
+        name: 'title',
     },
     {
         type: 'input',
@@ -27,12 +25,12 @@ inquirer
     },
     {
         type: 'input',
-        message: 'What are the guidelines to contribute to this application?',
+        message: 'What are the guidelines to contribute to this application? (Separate multiple guidelines with a comma)',
         name: 'contribution',
     },
     {
         type: 'input',
-        message:'Testing',
+        message:'What testing library did you use for this application?',
         name: 'testing',
     },
     {
@@ -51,20 +49,46 @@ inquirer
         message: 'What is your email address',
         name: 'email',
     },
+    {
+        type: "input",
+        message: 'List the name of your collobators if any (Separate with a comma)',
+        name: 'credits',
+    },
 
     ])
      .then((response) =>
-    //  fs.writeFile('README.txt',    
-     fs.writeFile('README.txt', 
-    `${response.title}`+`\n\n`+
-    '## Description'+`\n\n` +
-    `${response.Description}\n\n`+
-     '## Table of Contents',
-
-
-     
-     //'Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions';
-
+    //  fs.writeFile('README.md',    
+     fs.writeFile('Generator-README.md', 
+    `# ${response.title} \n\n` +
+    `## Description \n\n` +
+    `${response.Description}\n\n` +
+    `## Table of Contents \n\n` +
+    `* [Installation](#installation)\n`+
+    `* [Usage](#usage)\n`+
+    `* [Credits](#credits)\n`+
+    `* [License](#license)\n` +
+    `* [Contributing](#contributing)\n`+
+    `* [Tests](#tests)\n` +
+    `* [Questions](#questions)\n\n` +
+    `## Installation\n\n` +
+    `This project is installed by using:
+         ${response.installation}.\n\n`+
+    `## Usage\n\n` +
+    `${response.usage}\n\n` +
+    `## License\n\n` +
+    `${response.license}\n\n` +
+    `## Credits\n\n` +
+    `The following individual(s) assisted with the creation of this project:
+        ${response.credits}\n\n` +
+    `## Contributing\n\n` +
+    `If you would like to contribute to my application, please follow these guidelines: 
+        ${response.contribution}\n\n` +
+    `## Tests\n\n` +
+    `If applicable, the following testing library was used to test this application: 
+        ${response.testing}\n\n`+
+    `## Questions\n\n` +
+    `Github Page: https://github.com/${response.github}\n`+
+    `Email Address: ${response.email}`,
         (err) => err ? console.error(err) : console.log('Success!')));
 
 
