@@ -1,14 +1,12 @@
-[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
+[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/   about/)
 
 
-# Read Me Generator 
-
-undefined
+# ReadMe Generator 
 
 
 ## Description 
 
-It is cool
+My project allows for the quick assembly of a ReadMe by answering prompts within this application 
 
 
 ## Table of Contents 
@@ -25,38 +23,38 @@ It is cool
 ## Installation
 
 This project is installed by using:
-         asdfa.
+         npm install.
 
 
 ## Usage
 
-sdfasd
+Answer the prompts within this application to automatically generate a great quality ReadMe file
 
 
 ## License
 
-Eclipse
+WTFPL
 
 
 ## Credits
 
 The following individual(s) assisted with the creation of this project:
-        me, myself, and I
+        N/A
 
 
 ## Contributing
 
 If you would like to contribute to my application, please follow these guidelines: 
-        fad
+        Please follow the guidelines as listed within the Contributor Convenant
 
 
 ## Tests
 
 If applicable, the following testing library was used to test this application: 
-        afds
+        N/A
 
 
 ## Questions
 
 Github Page: https://github.com/shonhatcher
-Email Address: shonhatcher@gmail.com
+Email Address: shonhatcher@hotmail.com
